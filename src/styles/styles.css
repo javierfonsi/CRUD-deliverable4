@@ -1,0 +1,196 @@
+body{
+    background-color: #c63ec1;
+}
+
+.userList{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1vh;    
+}
+
+.userList>ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(106, 68, 143);
+    border-radius: 12px;
+    list-style: none;
+    border: orchid solid 2px;
+    background-color: #DAF3EB;
+    width: 96%;
+    height: 16vh;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.userList>ul>.user-info{
+    display:flex;
+    flex-direction: column;
+    align-items:baseline;
+    width: 43vw;
+}
+
+.userList>ul>.user-info>li{
+    padding-top: .7vh;
+}
+
+.userList>ul>.buttons{
+    display:flex;
+    flex-direction: row;
+}
+
+.userList>ul>.buttons>button{
+    color: #e78769;
+    border-style: none;
+    font-size: 1.3rem;
+    margin-left: 15px;
+}
+
+.userList>ul>.buttons>.edit{
+    color: black;
+    border-style: none;
+}
+
+.user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vh;
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
+.user>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 77%;
+}
+
+.user>div>input{
+    margin: 2%;
+    width: 100%;
+    border-style: none;
+    font-size: 1.3rem;
+    background-color: #E6F4F1;
+    border-radius: 6px;
+    height: 2.4rem;
+}
+
+.mail{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 3vh;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-size: 1.3rem;
+}
+
+form>div>input{
+    margin: 1%;
+    width: 77%;
+    border-style: none;
+    font-size: 1.3rem;
+    background-color: #E6F4F1;
+    border-radius: 6px;
+    height: 2.4rem;
+}
+
+.lock{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 3vh;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-size: 1.3rem;
+}
+
+.birthday{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 3vh;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-size: 1.3rem;
+}
+
+.form{
+    height: 50%;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #ffffff;
+}
+
+.form>form>button{
+    font-size: 1.4rem;
+    background-color: #00B4C1;
+    border-radius: 12px;
+    color: white;
+    height: 6.5vh;
+    width: 30vw;
+    border-style: none;
+    margin: 2.5vh 1vh 6.5vh 1vh;
+}
+
+.form>form>.hiden-button{
+    background-color: #d3e1e2;
+    color: rgb(99, 95, 95);
+}
+
+@media screen and (min-width: 577px) {
+    .form{
+        height: 65vh;
+        background-color: white;
+    }
+
+    .user>div{
+        display: flex;
+        flex-direction: row;
+        width: 91%;
+    }
+
+    .form>form>button{
+        width: 44%;
+        border-style: none;
+        margin: 1.2% 1% 6.5% 1%;
+    }
+    
+    .user>div>input{
+        font-size: 1.2rem;
+        height: 1.6rem;
+        padding: 1rem;
+    }
+
+    form>div>input{
+        padding: 1rem;
+        width: 88%;        
+    }
+}
+
+@media screen and (min-width: 773px) {
+    .form{
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .App .form {
+        height: 100vh;
+        width: 40%;
+    }
+    .App>.flex{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .App .userList{
+        width:60%;
+        overflow:auto;
+        height: 100vh;
+
+    }
+
+}

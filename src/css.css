@@ -1,0 +1,46 @@
+@media (min-width: 992px) {
+    .users-list{
+        width: 60%;
+        padding: 30px;
+        /* overflow-x: auto; */
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .users-list{
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+  }
+
+
+  @media (min-width: 576px) {
+    .user-form {
+        display: flex;        
+    }
+    .user-form form{
+        max-width: 579px;
+        /* height: 150vh; */
+    }
+}
+
+@media (min-width: 768px) {
+    .user-form form {
+         max-width: 721px;
+         /* position: fixed; */
+         background-color: white;
+     }
+}
+
+@media (min-width: 992px) {
+    .user-form{
+        background-color: white;
+        overflow-x: auto;
+        width: 40%;
+    }
+    .user-form form{
+        padding: 50px;
+        position: fixed;
+    }
+}
